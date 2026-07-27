@@ -318,7 +318,7 @@ export default function App() {
   ]);
 
   // Sync tab navigation when changing role
-  const handleRoleToggle = (newRole) => {
+  const handleRoleToggle = (newRole: string) => {
     setRole(newRole);
     if (newRole === 'owner') {
       setActiveTab('owner_dash');
